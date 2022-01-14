@@ -1,0 +1,54 @@
+/*--------------------
+------font-styles------
+---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/*-----------------------------
+--- Common styles or Utilites ---
+---------------------------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+nav h1{
+    font-size: 24px;
+}
+/* First section styles */
+.influencer{
+    display:flex;
+}
+.influencer-introduction{
+    width: 50%;
+}
+.influencer-title{
+    font-size: 50px;
+    font-weight:700;
+}
+.influencer-text{
+    font-size: 16px;
+}
+.button{
+    width: 196px;
+    height: 44px;
+    text-decoration: none;
+    color: white;
+    background: #E02C6D;
+    border-radius: 41px;
+    padding: 10px 24px;
+}
+/* Second section styles  */
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.collection{
+    box-shadow:5px 5px 30px gray;
+    border-radius: 5px;
+}
+.collection img{
+    margin-top: 10px;
+}
