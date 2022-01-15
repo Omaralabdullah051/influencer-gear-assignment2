@@ -21,11 +21,15 @@ nav h1{
     display:flex;
 }
 .influencer-introduction{
-    width: 50%;
+    width: 100%;
 }
 .title{
     font-size: 50px;
     font-weight:700;
+}
+.title:hover{
+    color: #B9345A;
+  transition: 0.5s ease-in-out;
 }
 .text{
     font-size: 16px;
@@ -39,8 +43,14 @@ nav h1{
     border-radius: 41px;
     padding: 10px 24px;
 }
+.button:hover{
+    color: black;
+    background-color: #02B290;
+    transition: 1s ease-in-out;
+}
 .banner img{
 width: 100%;
+margin-top: 70px;
 }
 .fa-arrow-right{
     margin: 5px;
@@ -104,6 +114,10 @@ span, .collection-text{
     position: absolute;
     right: 120px;
 }
+.next-page:hover{
+    color: #02B290;
+    transition: 0.5s ease-in-out;
+}
 /* Third Section styles */
 .gadgets-container{
     margin-top: 100px;
@@ -129,19 +143,21 @@ footer{
 }
 /* media queries */
 /* For Mobile View  */
-@media only screen and (max-width:688px) {
+@media only screen and (max-width:576px) {
     *{
         margin-left: 5px;
         margin-right: 5px;
+    
     }
     .influencer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 70px;      
+        grid-row-gap: 70px; 
+       
     }
     .influencer-introduction {
         text-align: center;
-        width: 100%; 
+        width: 100%;
     }
     .influencer-introduction .text{
         text-align: justify;
@@ -164,7 +180,7 @@ footer{
     
 }
 /* For Tablet display */
-@media only screen and (min-width:689px) and (max-width:992px) {
+@media only screen and (min-width:577px) and (max-width:768px) {
     *{
         margin-left: 5px;
         margin-right: 5px;
@@ -197,5 +213,40 @@ footer{
     }
     
 }
-
+@media only screen (min-width:769px) and (max-width:1400px) {
+    *{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .influencer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 70px;
+    }
+    .influencer-introduction {
+        text-align: center;
+        width: 100%; 
+    }
+    .influencer-introduction .text{
+        text-align: justify;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+  .collection img{
+      width: 98%;
+  }
+    .gadgets{
+        display: flex;
+        flex-direction: column;
+    }
+    .gadget img{
+        width: 100%;
+    }
+    
 }
+
