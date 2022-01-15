@@ -14,8 +14,7 @@ body{
 }
 nav h1{
     font-size: 24px;
-    margin-left: 70px;
-    margin-top: 50px;
+  text-align: center;
 }
 /* First section styles */
 .influencer{
@@ -39,6 +38,9 @@ nav h1{
     background: #E02C6D;
     border-radius: 41px;
     padding: 10px 24px;
+}
+.banner img{
+width: 100%;
 }
 .fa-arrow-right{
     margin: 5px;
@@ -124,4 +126,70 @@ footer{
     line-height: 10px;
     color: white;
     background-color: black;
+}
+/* media queries */
+/* For Mobile View  */
+@media only screen and (max-width:688px) {
+    *{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .influencer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 70px;      
+    }
+    .influencer-introduction {
+        text-align: center;
+        width: 80%; 
+    }
+   
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+  .collection img{
+      width: 98%;
+  }
+    .gadgets{
+        display: flex;
+        flex-direction: column;
+    }
+    .gadget img{
+        width: 100%;
+    }
+    
+}
+/* For Tablet display */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    *{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .influencer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 70px;
+    }
+    .influencer-introduction {
+        text-align: center;
+        width: 100%; 
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  .collection img{
+      width: 98%;
+  }
+    .gadgets{
+        display: flex;
+        flex-direction: column;
+    }
+    .gadget img{
+        width: 100%;
+    }
+    
+}
+
 }
