@@ -141,7 +141,10 @@ footer{
     }
     .influencer-introduction {
         text-align: center;
-        width: 80%; 
+        width: 100%; 
+    }
+    .influencer-introduction .text{
+        text-align: justify;
     }
    
     .collections{
@@ -174,6 +177,9 @@ footer{
     .influencer-introduction {
         text-align: center;
         width: 100%; 
+    }
+    .influencer-introduction .text{
+        text-align: justify;
     }
     .collections{
         display: grid;
